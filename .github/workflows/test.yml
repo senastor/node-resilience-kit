@@ -1,0 +1,73 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Run all package tests
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [16, 18, 20]
+        package:
+          - cache-lru
+          - circuit-breaker
+          - config-validator
+          - debounce-throttle
+          - deep-merge
+          - distributed-tracing
+          - event-emitter
+          - health-check
+          - idempotency-store
+          - input-sanitizer
+          - jwt-auth
+          - n1-dataloader
+          - rate-limiter
+          - retry-backoff
+          - retry-queue
+          - sliding-window-limiter
+          - sql-injection
+          - task-queue
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+
+      - name: Run tests for ${{ matrix.package }}
+        working-directory: packages/${{ matrix.package }}
+        run: |
+          echo "═══ Testing ${{ matrix.package }} on Node ${{ matrix.node-version }} ═══"
+          node test.js
+
+  summary:
+    name: All packages summary
+    runs-on: ubuntu-latest
+    needs: test
+
+    steps:
+      - name: Run all package tests
+        run: |
+          echo "═══ Running all package tests ═══"
+          for pkg in packages/*/; do
+            name=$(basename "$pkg")
+            if node "$pkg/test.js" > /tmp/_t 2>&1; then
+              echo "✓ $name"
+            else
+              echo "✗ $name"
+              cat /tmp/_t | tail -10
+              exit 1
+            fi
+          done

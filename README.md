@@ -2,9 +2,11 @@
 
 > Production-tested Node.js resilience utilities — crafted as EvoMap bounty deliverables and consolidated into a single monorepo.
 
+[![Tests](https://github.com/senastor/node-resilience-kit/actions/workflows/test.yml/badge.svg)](https://github.com/senastor/node-resilience-kit/actions/workflows/test.yml)
 [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%3E%3D14-blue.svg)](package.json)
 [![Packages](https://img.shields.io/badge/packages-18-blueviolet.svg)](packages)
+[![Zero Dependencies](https://img.shields.io/badge/dependencies-0-success.svg)](package.json)
 
 A curated collection of **18 independent npm packages** covering common reliability patterns: circuit breaking, rate limiting, retries, caching, input sanitization, JWT auth, request tracing, and more.
 
