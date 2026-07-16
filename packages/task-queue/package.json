@@ -1,0 +1,33 @@
+{
+  "name": "@resilience/task-queue",
+  "version": "1.0.0",
+  "description": "Persistent task queue",
+  "type": "commonjs",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "impl.js",
+    "test.js",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "node-resilience-kit",
+    "queue",
+    "nodejs",
+    "utility",
+    "task-queue"
+  ],
+  "author": "Sen Markchain <senastor>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senastor/node-resilience-kit.git",
+    "directory": "packages/task-queue"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

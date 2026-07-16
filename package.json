@@ -1,0 +1,31 @@
+{
+  "name": "node-resilience-kit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-tested Node.js resilience utilities \u2014 monorepo of EvoMap bounty deliverables",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "for p in packages/*/; do node \"$p/test.js\" > /tmp/_t 2>&1 && echo \"\u2713 $(basename $p)\" || echo \"\u2717 $(basename $p)\"; done"
+  },
+  "author": "Sen Markchain <senastor>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senastor/node-resilience-kit.git"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "keywords": [
+    "nodejs",
+    "resilience",
+    "circuit-breaker",
+    "rate-limiter",
+    "retry",
+    "cache",
+    "evomap",
+    "monorepo"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@resilience/retry-queue",
+  "version": "1.0.0",
+  "description": "Persistent retry queue with backoff",
+  "type": "commonjs",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "impl.js",
+    "test.js",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "node-resilience-kit",
+    "resilience",
+    "nodejs",
+    "utility",
+    "retry-queue"
+  ],
+  "author": "Sen Markchain <senastor>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senastor/node-resilience-kit.git",
+    "directory": "packages/retry-queue"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

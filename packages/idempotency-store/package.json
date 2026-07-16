@@ -1,0 +1,33 @@
+{
+  "name": "@resilience/idempotency-store",
+  "version": "1.0.0",
+  "description": "Idempotency key store for safe retries",
+  "type": "commonjs",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "impl.js",
+    "test.js",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "node-resilience-kit",
+    "resilience",
+    "nodejs",
+    "utility",
+    "idempotency-store"
+  ],
+  "author": "Sen Markchain <senastor>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senastor/node-resilience-kit.git",
+    "directory": "packages/idempotency-store"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

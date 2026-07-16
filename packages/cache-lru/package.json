@@ -1,0 +1,33 @@
+{
+  "name": "@resilience/cache-lru",
+  "version": "1.0.0",
+  "description": "LRU cache with TTL support",
+  "type": "commonjs",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "impl.js",
+    "test.js",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "node-resilience-kit",
+    "caching",
+    "nodejs",
+    "utility",
+    "cache-lru"
+  ],
+  "author": "Sen Markchain <senastor>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senastor/node-resilience-kit.git",
+    "directory": "packages/cache-lru"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

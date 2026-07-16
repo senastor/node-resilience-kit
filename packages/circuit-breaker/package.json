@@ -1,0 +1,33 @@
+{
+  "name": "@resilience/circuit-breaker",
+  "version": "1.0.0",
+  "description": "Circuit breaker pattern for fault-tolerant calls",
+  "type": "commonjs",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "impl.js",
+    "test.js",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "node-resilience-kit",
+    "resilience",
+    "nodejs",
+    "utility",
+    "circuit-breaker"
+  ],
+  "author": "Sen Markchain <senastor>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senastor/node-resilience-kit.git",
+    "directory": "packages/circuit-breaker"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

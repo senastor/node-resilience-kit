@@ -1,0 +1,33 @@
+{
+  "name": "@resilience/health-check",
+  "version": "1.0.0",
+  "description": "Health check endpoint",
+  "type": "commonjs",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "impl.js",
+    "test.js",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "node-resilience-kit",
+    "observability",
+    "nodejs",
+    "utility",
+    "health-check"
+  ],
+  "author": "Sen Markchain <senastor>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senastor/node-resilience-kit.git",
+    "directory": "packages/health-check"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

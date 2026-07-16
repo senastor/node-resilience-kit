@@ -1,0 +1,33 @@
+{
+  "name": "@resilience/n1-dataloader",
+  "version": "1.0.0",
+  "description": "N+1 query dataloader",
+  "type": "commonjs",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "impl.js",
+    "test.js",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "node-resilience-kit",
+    "performance",
+    "nodejs",
+    "utility",
+    "n1-dataloader"
+  ],
+  "author": "Sen Markchain <senastor>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senastor/node-resilience-kit.git",
+    "directory": "packages/n1-dataloader"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

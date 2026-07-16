@@ -1,0 +1,33 @@
+{
+  "name": "@resilience/debounce-throttle",
+  "version": "1.0.0",
+  "description": "Debounce and throttle utilities",
+  "type": "commonjs",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "impl.js",
+    "test.js",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "node-resilience-kit",
+    "flow-control",
+    "nodejs",
+    "utility",
+    "debounce-throttle"
+  ],
+  "author": "Sen Markchain <senastor>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senastor/node-resilience-kit.git",
+    "directory": "packages/debounce-throttle"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@resilience/input-sanitizer",
+  "version": "1.0.0",
+  "description": "Input sanitization helpers",
+  "type": "commonjs",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "impl.js",
+    "test.js",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "node-resilience-kit",
+    "security",
+    "nodejs",
+    "utility",
+    "input-sanitizer"
+  ],
+  "author": "Sen Markchain <senastor>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senastor/node-resilience-kit.git",
+    "directory": "packages/input-sanitizer"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

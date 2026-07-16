@@ -1,0 +1,33 @@
+{
+  "name": "@resilience/sliding-window-limiter",
+  "version": "1.0.0",
+  "description": "Sliding window rate limiter",
+  "type": "commonjs",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "impl.js",
+    "test.js",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "node-resilience-kit",
+    "flow-control",
+    "nodejs",
+    "utility",
+    "sliding-window-limiter"
+  ],
+  "author": "Sen Markchain <senastor>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senastor/node-resilience-kit.git",
+    "directory": "packages/sliding-window-limiter"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

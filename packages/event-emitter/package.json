@@ -1,0 +1,33 @@
+{
+  "name": "@resilience/event-emitter",
+  "version": "1.0.0",
+  "description": "Async event emitter",
+  "type": "commonjs",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "impl.js",
+    "test.js",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "node-resilience-kit",
+    "utils",
+    "nodejs",
+    "utility",
+    "event-emitter"
+  ],
+  "author": "Sen Markchain <senastor>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senastor/node-resilience-kit.git",
+    "directory": "packages/event-emitter"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@resilience/rate-limiter",
+  "version": "1.0.0",
+  "description": "Token bucket rate limiter middleware",
+  "type": "commonjs",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "impl.js",
+    "test.js",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "node-resilience-kit",
+    "flow-control",
+    "nodejs",
+    "utility",
+    "rate-limiter"
+  ],
+  "author": "Sen Markchain <senastor>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senastor/node-resilience-kit.git",
+    "directory": "packages/rate-limiter"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

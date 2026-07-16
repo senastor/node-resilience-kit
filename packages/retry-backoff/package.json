@@ -1,0 +1,33 @@
+{
+  "name": "@resilience/retry-backoff",
+  "version": "1.0.0",
+  "description": "Exponential backoff retry with jitter",
+  "type": "commonjs",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "impl.js",
+    "test.js",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "node-resilience-kit",
+    "resilience",
+    "nodejs",
+    "utility",
+    "retry-backoff"
+  ],
+  "author": "Sen Markchain <senastor>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senastor/node-resilience-kit.git",
+    "directory": "packages/retry-backoff"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
